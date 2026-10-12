@@ -1,0 +1,7 @@
+node_modules
+dist
+*.tsbuildinfo
+.DS_Store
+.claude/
+# Local models for the example (often large or client-owned). Symlink or copy here.
+examples/*/public/models

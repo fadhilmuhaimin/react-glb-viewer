@@ -1,0 +1,64 @@
+{
+  "name": "react-glb-viewer",
+  "version": "0.1.0",
+  "description": "React component for viewing GLB/glTF models with three.js: URL fallbacks and proxying, byte progress, retry, auto-framing, and support for old Sketchfab spec-gloss materials.",
+  "license": "MIT",
+  "author": "fadhilmuhaimin (https://github.com/fadhilmuhaimin)",
+  "homepage": "https://github.com/fadhilmuhaimin/react-glb-viewer#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fadhilmuhaimin/react-glb-viewer.git",
+    "directory": "packages/react-glb-viewer"
+  },
+  "bugs": {
+    "url": "https://github.com/fadhilmuhaimin/react-glb-viewer/issues"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "vitest run && tsup"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "three": ">=0.167.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "react": "^19.3.0",
+    "three": "^0.186.1",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.3"
+  },
+  "keywords": [
+    "react",
+    "three",
+    "threejs",
+    "glb",
+    "gltf",
+    "3d",
+    "model-viewer",
+    "viewer",
+    "sketchfab"
+  ]
+}

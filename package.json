@@ -1,0 +1,16 @@
+{
+  "name": "react-glb-viewer-monorepo",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.2.19",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "bun run --filter react-glb-viewer build",
+    "test": "bun run --filter react-glb-viewer test",
+    "typecheck": "bun run --filter '*' typecheck",
+    "dev": "bun run --filter example-basic dev"
+  }
+}
