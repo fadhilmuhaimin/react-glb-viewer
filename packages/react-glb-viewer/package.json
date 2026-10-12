@@ -1,6 +1,6 @@
 {
   "name": "react-glb-viewer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React component for viewing GLB/glTF models with three.js: URL fallbacks and proxying, byte progress, retry, auto-framing, and support for old Sketchfab spec-gloss materials.",
   "license": "MIT",
   "author": "fadhilmuhaimin (https://github.com/fadhilmuhaimin)",
